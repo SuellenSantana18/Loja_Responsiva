@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Shop</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Loja tech</h2>
+            <form>
+                <input type="search">
+                <button class="btn" type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">Periféricos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Fone</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Teclado</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Acessórios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Capinhas</a></li>
+                        <li><a href="#">Películas</a></li>
+                        <li><a href="#">Suportes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Consoles</a>
+                    <ul class="submenu">
+                        <li><a href="#">PlayStation</a></li>
+                        <li><a href="#">Xbox</a></li>
+                        <li><a href="#">PC Gamer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $('.menu > li').hover(
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideDown();
+                }, 
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideUp();
+                }
+            );
+        });
+    </script>
+</body>
+</html>
+
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <div class="size1">
+                        <img src="https://arenacomputadores.com.br/wp-content/uploads/2025/01/GALAX-GeForce-RTX%E2%84%A2-5090-1-Click-OC-2.png" /> <!--imagem fake mostra o espacamento-->
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisilat accusantium maiores assumenda officiis?</h3>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <div class="size2">
+                        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/708344/large/Console-Sony-Ps5-Playstation-5-Slim-Edi-o-Standard-1TB-16gb_1738927232.png" /> <!--imagem fake mostra o espacamento-->
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+                    </div>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Ultimas Noticias</h2>
+              <div class="noticias">
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://cdn.awsli.com.br/600x450/2443/2443989/produto/17318061862a4a281e1.jpg" /> <!--imagem fake mostra o espacamento-->
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+                    </a>
+                </article>
+        
+            <article class="noticia">
+                <a href="#">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_916293-MLB76747490319_052024-O.webp" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+                </a>
+            </article>
+
+            <article class="noticia">
+                <a href="#">
+                    <img src="https://www.oderco.com.br/media/catalog/product/cache/a09cb7e3a42dd2f134ff88c47e22ea43/6/5/65424-17129749640711253.jpeg" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+                </a>
+            </article>
+
+            <article class="noticia">
+                <a href="#">
+                    <img src="https://images-americanas.b2w.io/produtos/7481358871/imagens/monitor-gamer-goldentec-24-led-full-hd-curvo-144hz/7481358874_1_large.jpg" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+                </a>
+            </article>
+
+            <article class="noticia">
+                <a href="#">
+                    <img src="https://cdn.dooca.store/15/products/processador-amd-ryzen-7-2700x-37ghz-435ghz-max-turbo-yd270xbgafbox-octa-core-16mb-cooler-wraith-prism-rgb-imp-73308_640x640+fill_ffffff.jpg?v=1570455235&webp=0" /> <!--imagem fake mostra o espacamento-->
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+                </a>
+            </article>
+    
+    <article class="noticia">
+        <a href="#">
+            <img src="https://www.adrenaline.com.br/wp-content/uploads/2024/03/qYbCISX5-intel-core-i9-14900ks.jpg" /> <!--imagem fake mostra o espacamento-->
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum </h3>
+        </a>
+    </article>
+ </div>
+</section>
+</section>
+<aside>
+</main>
+    <aside>
+    <section class="novidade">
+        <h2>Novidade</h2>
+        <article class="noticia">
+            <a href="">
+                <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/c/pc-pichau-apus-preto-monitor-leopard_3.jpg" />
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum eiciendis nostrum porro repellat accusantium maiores assumenda officiis?</h3>
+            </a>
+        </article>
+        <article class="noticia">
+            <a href="">
+                <img src="https://lojagoldentec.vteximg.com.br/arquivos/ids/163430-1000-1000/image-cf6d21a81ece4cd595356e05b45e64ae.jpg?v=638101759937970000" />
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum eiciendis nostrum porro repellat accusantium maiores assumenda officiis?</h3>
+            </a>
+        </article>
+        <article class="noticia">
+            <a href="">
+                <img src="https://comprebel.com.br/media/catalog/product/cache/2/image/1800x/040ec09b1e35df139433887a97daa66f/2/7/2763711668.jpg" />
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum eiciendis nostrum porro repellat accusantium maiores assumenda officiis?</h3>
+            </a>
+        </article>
+                <article class="noticia">
+            <a href="">
+                <img src="https://cdn.dooca.store/180/products/gabinete-gamer-nzxt-h9-flow-mid-tower-vidro-temperado-white-atx-sem-fonte-com-4-fans-cm-h91fw-01-1-2_640x640+fill_ffffff.jpg?v=1681321785&webp=0" />
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum eiciendis nostrum porro repellat accusantium maiores assumenda officiis?</h3>
+            </a>
+        </article>
+    </section>
+</aside>
+</div>
+
+<section class="destaqueLoja">
+    <article class="loja">
+        <div class="textos">
+            <h2>Sobre nós:</h2> <!-- Título acima da imagem -->
+            <img src="https://images.vexels.com/content/143202/preview/people-crowd-c66533.png" alt="img" />
+        </div>
+        <div class="descricao">
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus illum eiciendis nostrum porro repellat accusantium maiores assumenda officiis?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dolore voluptas consequuntur quisquam id maiores, excepturi architecto cupiditate molestiae aspernatur vero adipisci nihil dolores possimus a delectus incidunt quia
+            </h3>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" class="icon1"  />
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/481/small/facebook-icon-free-png.png" class="icon2">
+            </p> 
+        </div>
+    </article>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function() {
+            $('.menu > li').hover(
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideDown();
+                }, 
+                function() {
+                    $(this).find('.submenu').stop(true, true).slideUp();
+                }
+            );
+        });
+
+</script>
+<footer>
+    <p>Todos os direitos reservados &copy; 2025 | Feito por Suellen Santana</p>
+</footer>
+
+</body>
+</html>   <!---<img src="https://placehold.co/320x320" /> imagem fake mostra o espacamento-->
