@@ -89,10 +89,10 @@ form {
 
 
 .submenu {
-    display: none;
+    display:block;
     background-color: rgba(34, 34, 34, 0.8); 
     position: absolute;
-    width: 220px;  
+    width: 110px;  
     top: 100%; 
     left: 0; 
     border: 1px solid #ff6600;
@@ -104,7 +104,7 @@ form {
 }
 
 .submenu li {
-    padding: 10px 15px;
+    padding: 10px;
     list-style: none;
     color: #fff;
     background-color: rgba(51, 51, 51, 0.9); 
@@ -125,6 +125,11 @@ form {
     text-decoration: none;
     color: inherit;
 }
+
+
+
+
+
 
 
 
@@ -161,7 +166,7 @@ form {
 }
 
 .size1  img{
-    width: 40%;
+    width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 5px;
@@ -219,14 +224,35 @@ form {
     margin-top: 20px;
 }
 
-.destaque .noticia a {
-    display: flex;
-    font-size: 1.8em;
-}
+
 
 .destaque .noticia img {
-    margin-right: 8px;
+    margin-right: 5px;
     border-radius: 5px;
+}
+
+.ver-mais {
+    
+    margin-top: 20px; /* Afasta mais do <h3> */
+    padding: 10px 15px; /* Dá um tamanho ao botão */
+    background-color: #e65c00;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+    margin-left: 494px;
+    margin: 0;
+  
+}
+
+.ver-mais:hover {
+    background-color: #cc4f00; /* Efeito ao passar o mouse */
+}
+
+.destaque .noticia h3 {
+    font-size: 2em; 
+
 }
 
 section h2 {
@@ -290,6 +316,10 @@ footer {
 
 }
 
+.destaque .noticia img {
+   max-width: 40%;
+}
+
 body {
     background-color: #d1b5b543;
 }
@@ -309,6 +339,7 @@ body {
         font-size: 1.0em;
     }
 
+    
 
     .destaque .noticia img {
         margin-right: 0;
@@ -354,6 +385,7 @@ body {
 
     .size2 img, .size1 img{
         width: 200px;
+        
     }
 
     .size1{
@@ -366,6 +398,9 @@ body {
         padding-right: 20px;
     }
 
+    .ver-mais {
+        margin: 20px auto;  /* Centraliza horizontalmente no celular */
+    }
 
 
 }
@@ -386,9 +421,8 @@ body {
     }
 
     .destaque .noticia a {
-        display: block;
-        font-size: 1.4em;
-
+        
+        font-size: 1.0em;
     }
     .destaqueLoja {
         flex-direction: column;
@@ -399,10 +433,12 @@ body {
     .loja {
         flex-direction: column;
         max-width: 80%;
-        margin-top: 60px;
+        margin-top: 80px;
         
     }
-}
+
+    }
+
 
 
 
@@ -424,6 +460,9 @@ body {
         max-width: 70%;
         margin-top: 60px;
         width: 50%;
+    }
+    .ver-mais {
+        margin: 20px auto;  /* Centraliza horizontalmente no celular */
     }
 }
 
